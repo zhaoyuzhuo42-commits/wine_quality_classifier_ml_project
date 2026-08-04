@@ -1,0 +1,9 @@
+#virtual enviroment
+venv
+.venv
+
+#python
+__pycache__
+
+#data
+data/*.csv
