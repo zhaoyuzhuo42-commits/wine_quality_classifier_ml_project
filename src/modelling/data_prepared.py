@@ -23,4 +23,10 @@ def split_training_test_data(X, y):
                                                         random_state= 42,
                                                         stratify= y)
     return X_train, X_test, y_train, y_test
-    
+
+def prepare_data(cleanflie):
+    df = load_training_data(cleanflie)
+    create_target(df)
+    X, y = split_features_target(df)
+    split_training_test_data(X, y)
+    return X_train, X_test, y_train, y_test
