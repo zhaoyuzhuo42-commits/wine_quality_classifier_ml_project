@@ -1,6 +1,6 @@
 import pytest
 import pandas as pd
-from src.cleaner import load_dataset, standerdise_columns_name
+from src.ingestion.cleaner import load_dataset, standerdise_columns_name
 from src.config import WHITE_WINE_FILE,RED_WINE_FILE
 
 def test_load_dataset(tmp_path):

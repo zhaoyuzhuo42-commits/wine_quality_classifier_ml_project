@@ -1,7 +1,7 @@
 from src.config import RED_WINE_FILE,CLEANED_RED_WINE_FILE,WHITE_WINE_FILE,CLEANED_WHITE_WINE_FILE
-from src.downloader import download_dataset
-from src.cleaner import load_dataset, standerdise_columns_name
-from src.storage import save_dataset
+from src.ingestion.downloader import download_dataset
+from src.ingestion.cleaner import load_dataset, standerdise_columns_name
+from src.ingestion.storage import save_dataset
 import logging
 
 logging.basicConfig(
